@@ -1,0 +1,150 @@
+/* Project msp01-juanpaco-resume */
+/* Written by: JuanPaco at Cuernavaca, México */
+/* Thursday 05 - March - 2020 */
+/* html files: index.html */
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300');
+
+body {
+    font-family: Lato;
+    color: #F2B544;
+}
+
+/*------------------ Main Menu & Social Networks Definitions */
+
+.bar-fixed {
+    background: #132240;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+.bar-fixed-top {
+    top: 0;
+}
+
+.bar-fixed-bottom {
+    bottom: 0;
+}
+
+.mainmenu {
+    display: flex;
+    font-size: 60%;
+    list-style-type: none;
+    text-align: center;
+
+    letter-spacing: 0.5px;
+    justify-content: space-around;
+}
+
+.socialnet {
+    display: flex;
+    font-size: 60%;
+    list-style-type: none;
+    text-align: center;
+
+    justify-content: space-around;
+    line-height: 75px;
+}
+
+.mainmenu i {
+    margin-top: 20px;
+    font-size: 150%;
+}
+
+.mainmenu li, .socialnet li {
+    margin-right: 5px;
+}
+
+.mainmenu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.mainmenu span {
+    margin-top: 5px;
+    display: block;
+    line-height: 10px;
+}
+
+.mainmenu span:hover {
+    border-bottom: 1px solid #F2B544;
+}
+
+
+
+.mainmenu a i:hover, .socialnet a i:hover {
+    font-size: 160%;
+}
+
+.mainmenu li a i, .socialnet li a i {
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    border-radius: 50%;
+    font-size: 13px;
+    line-height: 7px;
+    text-align: center;
+    color: #fafafa;
+    background: #5A6B8C;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.mainmenu li a i:hover, .socialnet li a i:hover {
+    background-color: #A6341B;
+}
+
+.mainmenu li a img {
+    margin-top: 5px;
+}
+
+.mainmenu li a img:hover {
+    animation-name: me-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+}
+
+@keyframes me-zoom {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(1.2);
+	}
+}
+
+/*----------------------------------- Introduce Me Definitions */
+
+.introduce-container {
+    height: 100vh;
+    background: url("../images/temporary-image.jpg") no-repeat bottom right fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100;
+    background-color: rgba(0,0,0,0.25);
+}
+
+/*----------------------------------- Overwrite "Jumbotron" Definitions */
+
+.jumbotron {
+    background-color: transparent;
+}
+
+/*----------------------------------- Overwrite "Jumbotron" Definitions */
