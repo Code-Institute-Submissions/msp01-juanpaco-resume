@@ -3,20 +3,28 @@
 /* Thursday 05 - March - 2020 */
 /* html files: index.html */
 
+/*---------------------- General Definitions */
+
 @import url('https://fonts.googleapis.com/css?family=Lato:300');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
 
 body {
     font-family: Lato;
     color: #F2B544;
 }
 
-/*------------------ Main Menu & Social Networks Definitions */
+/*------------------ Bar Fixed Definitions */
 
 .bar-fixed {
-    background: #132240;
-    width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 1;   
+    background: #5A6B8C; 
+    width: 100%;
 }
 
 .bar-fixed-top {
@@ -27,83 +35,62 @@ body {
     bottom: 0;
 }
 
-.mainmenu {
+.bar-fixed-items {
     display: flex;
     font-size: 60%;
     list-style-type: none;
     text-align: center;
-
+    justify-content: center;
     letter-spacing: 0.5px;
-    justify-content: space-around;
 }
 
-.socialnet {
-    display: flex;
-    font-size: 60%;
-    list-style-type: none;
-    text-align: center;
-
-    justify-content: space-around;
-    line-height: 75px;
-}
-
-.mainmenu i {
-    margin-top: 20px;
-    font-size: 150%;
-}
-
-.mainmenu li, .socialnet li {
+.bar-fixed-items li {
     margin-right: 5px;
 }
 
-.mainmenu a {
+.bar-fixed-items li a {
     text-decoration: none;
-    color: inherit;
+    color: #fafafa;
 }
 
-.mainmenu span {
-    margin-top: 5px;
-    display: block;
-    line-height: 10px;
-}
-
-.mainmenu span:hover {
-    border-bottom: 1px solid #F2B544;
-}
-
-
-
-.mainmenu a i:hover, .socialnet a i:hover {
-    font-size: 160%;
-}
-
-.mainmenu li a i, .socialnet li a i {
+.bar-fixed-items li a i {
+    margin-top: 20px;
+    font-size: 150%;
     width: 32px;
     height: 32px;
     padding: 12px 0;
     border-radius: 50%;
-    font-size: 13px;
     line-height: 7px;
     text-align: center;
-    color: #fafafa;
-    background: #5A6B8C;
+    background: #132240;
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
 }
 
-.mainmenu li a i:hover, .socialnet li a i:hover {
+.bar-fixed-items li a i:hover {
+    font-size: 170%;
     background-color: #A6341B;
 }
 
-.mainmenu li a img {
+.bar-fixed-items li a span {
+    margin-top: 5px;
+    display: block;
+    line-height: 10px;
+}
+
+.bar-fixed-items li a span:hover {
+    border-bottom: 1px solid #F2B544;
+}
+
+.bar-fixed-items li a img {
     margin-top: 5px;
 }
 
-.mainmenu li a img:hover {
+.bar-fixed-items li a img:hover {
     animation-name: me-zoom;
-    animation-duration: 5s;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
     overflow: hidden;
 }
@@ -120,16 +107,16 @@ body {
 /*----------------------------------- Introduce Me Definitions */
 
 .introduce-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
     height: 100vh;
     background: url("../images/temporary-image.jpg") no-repeat bottom right fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
 }
 
 .opaque-overlay {
@@ -141,10 +128,54 @@ body {
     background-color: rgba(0,0,0,0.25);
 }
 
+/*----------------------------------- What Do I Do? Definitions */
+
+.container-whatdoido {
+    background-color: #A6341B;
+}
+
+.container-whatdoido-cards {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.whatdoido-card {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.whatdoido-card i {
+    margin-bottom: 20px;
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.whatdoido-card .btn {
+    background-color: white;
+    border-color: white;
+    border-radius: 15px;
+    min-width: 100px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #A6341B;
+} 
+
+/* --------------------------------- Block Dividers */
+
+.block-divider {
+    width: 75px;
+    height: 5px;
+    border: 0;
+    background-color: white;
+}
+
+.block-divider--short {
+    width: 35px;
+}
+
 /*----------------------------------- Overwrite "Jumbotron" Definitions */
 
 .jumbotron {
     background-color: transparent;
 }
 
-/*----------------------------------- Overwrite "Jumbotron" Definitions */
