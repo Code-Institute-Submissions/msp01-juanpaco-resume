@@ -3,9 +3,10 @@
 /* Thursday 05 - March - 2020 */
 /* html files: index.html */
 
+
 /*---------------------- General Definitions */
 
-@import url('https://fonts.googleapis.com/css?family=Lato:300');
+/*@import url('https://fonts.googleapis.com/css?family=Lato:300');*/
 
 * {
     margin: 0;
@@ -14,8 +15,17 @@
 }
 
 body {
-    font-family: Lato;
-    color: #F2B544;
+    font-family: 'Roboto', sans-serif;
+    color: #D9D9D9;
+}
+
+h1 {
+    letter-spacing: 4px;
+    font-size: 95%;
+}
+
+h2 {
+    color: #F2F2F2;
 }
 
 /*------------------ Bar Fixed Definitions */
@@ -23,7 +33,7 @@ body {
 .bar-fixed {
     position: fixed;
     z-index: 1;   
-    background: #5A6B8C; 
+    background: #5F6673; 
     width: 100%;
 }
 
@@ -32,7 +42,7 @@ body {
 }
 
 .bar-fixed-bottom {
-    bottom: 0;
+    bottom: 0; 
 }
 
 .bar-fixed-items {
@@ -50,7 +60,7 @@ body {
 
 .bar-fixed-items li a {
     text-decoration: none;
-    color: #fafafa;
+    color: #F2F2F2;
 }
 
 .bar-fixed-items li a i {
@@ -62,7 +72,7 @@ body {
     border-radius: 50%;
     line-height: 7px;
     text-align: center;
-    background: #132240;
+    background: #5F6673;
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
@@ -81,18 +91,17 @@ body {
 }
 
 .bar-fixed-items li a span:hover {
-    border-bottom: 1px solid #F2B544;
+    border-bottom: 1px solid #F2F2F2;
 }
 
 .bar-fixed-items li a img {
-    margin-top: 5px;
+    margin-top: 5px; 
 }
 
 .bar-fixed-items li a img:hover {
     animation-name: me-zoom;
     animation-duration: 1s;
     animation-fill-mode: forwards;
-    overflow: hidden;
 }
 
 @keyframes me-zoom {
@@ -131,13 +140,60 @@ body {
 /*----------------------------------- What Do I Do? Definitions */
 
 .container-whatdoido {
-    background-color: #A6341B;
+    background-color: #AAB1BF;
 }
 
-.container-whatdoido-cards {
-    padding-top: 75px;
-    padding-bottom: 75px;
+
+
+.page-header {
+    margin-bottom: 0;
+    border-bottom: 0;
+    text-align: center;
 }
+
+/* --------------------------------- Block Dividers */
+
+.hr-divider {
+    width: 75px;
+    height: 10px;
+    border: 0;
+    background-color: #F2F2F2;
+}
+
+.hr-divider--short {
+    width: 55px; 
+}
+
+/* ---------------------------------  */
+
+.container-whatdoido-cards {
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+
+
+/*----------------------------------- Overwrite "Buttons" Definitions */
+
+.btn {
+    background-color: #A6341B;
+    border-color: #A6341B;
+    border-radius: 15px;
+    min-width: 100px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #F2F2F2;
+} 
+
+.btn:hover,
+.btn:active,
+.btn:focus,
+.btn:active:focus {
+    background-color: #df4929;
+    border-color: #df4929;
+    color: inherit;
+}
+
 
 .whatdoido-card {
     text-align: center;
@@ -150,32 +206,12 @@ body {
     line-height: 45px;
 }
 
-.whatdoido-card .btn {
-    background-color: white;
-    border-color: white;
-    border-radius: 15px;
-    min-width: 100px;
-    font-weight: bold;
-    margin-top: 10px;
-    color: #A6341B;
-} 
-
-/* --------------------------------- Block Dividers */
-
-.block-divider {
-    width: 75px;
-    height: 5px;
-    border: 0;
-    background-color: white;
-}
-
-.block-divider--short {
-    width: 35px;
-}
-
 /*----------------------------------- Overwrite "Jumbotron" Definitions */
 
-.jumbotron {
+.jumbotron { 
     background-color: transparent;
 }
 
+.jumbotron .lead { 
+    color: #D9D9D9; 
+}
