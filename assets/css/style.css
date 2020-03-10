@@ -132,7 +132,7 @@ h2 {
     top: 0;
     left: 0;
     height: 100%;
-    width: 100;
+    width: 100%;
     background-color: rgba(0,0,0,0.25);
 }
 
@@ -144,7 +144,7 @@ h2 {
 
 .container-whatdoido-cards {
     padding-top: 65px;
-    padding-bottom: 65px;
+    padding-bottom: 25px;
 }
 
 .whatdoido-card {
@@ -161,16 +161,27 @@ h2 {
 /*----------------------------------- Discovering Definitions */
 
 .container-discovering {
+    color: #5F6673;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    height: 100vh;
+    height: 60vh;
     background-color: #F2F2F2;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+}
+
+.container-banner {
+    width: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.container-banner i {
+    font-size: 150%;
 }
 
 /* --------------------------------- Block Dividers Definitions */
@@ -188,6 +199,10 @@ h2 {
 
 .hr-divider--gray {
     background-color: #F2F2F2;
+}
+
+.hr-divider--dark {
+    background-color: #5F6673;
 }
 
 /*----------------------------------- Overwrite "Buttons" Definitions */
