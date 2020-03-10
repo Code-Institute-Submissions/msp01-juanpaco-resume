@@ -6,12 +6,11 @@
 
 /*---------------------- General Definitions */
 
-/*@import url('https://fonts.googleapis.com/css?family=Lato:300');*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
 
 * {
-    margin: 0;
+    /*margin: 0; border: 0;*/
     padding: 0;
-    border: 0;
 }
 
 body {
@@ -143,19 +142,42 @@ h2 {
     background-color: #AAB1BF;
 }
 
-
-
-.page-header {
-    margin-bottom: 0;
-    border-bottom: 0;
-    text-align: center;
+.container-whatdoido-cards {
+    padding-top: 65px;
+    padding-bottom: 65px;
 }
 
-/* --------------------------------- Block Dividers */
+.whatdoido-card {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.whatdoido-card i {
+    margin-bottom: 20px;
+    font-size: 45px;
+    line-height: 45px;
+}
+
+/*----------------------------------- Discovering Definitions */
+
+.container-discovering {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100vh;
+    background-color: #F2F2F2;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+/* --------------------------------- Block Dividers Definitions */
 
 .hr-divider {
-    width: 75px;
-    height: 10px;
+    width: 85px;
+    height: 3px;
     border: 0;
     background-color: #F2F2F2;
 }
@@ -164,14 +186,9 @@ h2 {
     width: 55px; 
 }
 
-/* ---------------------------------  */
-
-.container-whatdoido-cards {
-    padding-top: 65px;
-    padding-bottom: 65px;
+.hr-divider--gray {
+    background-color: #F2F2F2;
 }
-
-
 
 /*----------------------------------- Overwrite "Buttons" Definitions */
 
@@ -185,6 +202,11 @@ h2 {
     color: #F2F2F2;
 } 
 
+.btn-container {
+    background-color: #5F6673;
+    border-color: #5F6673;    
+}
+
 .btn:hover,
 .btn:active,
 .btn:focus,
@@ -192,18 +214,6 @@ h2 {
     background-color: #df4929;
     border-color: #df4929;
     color: inherit;
-}
-
-
-.whatdoido-card {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.whatdoido-card i {
-    margin-bottom: 20px;
-    font-size: 45px;
-    line-height: 45px;
 }
 
 /*----------------------------------- Overwrite "Jumbotron" Definitions */
