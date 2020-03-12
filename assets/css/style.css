@@ -27,6 +27,20 @@ h2 {
     color: #F2F2F2;
 }
 
+/*----------------- Colours */
+
+.bg-color-work-history {
+    background-color: #D9D9D9;
+}
+
+.section-column {
+    display: table-cell;
+    margin-top: 90px;
+    padding: 30px 30px 30px;
+    float: none;
+    color: #5F6673;
+}
+
 /*------------------ Bar Fixed Definitions */
 
 .bar-fixed {
@@ -123,10 +137,10 @@ h2 {
 /*----------------------------------- Some General format containers Definitions */
 
 .format-container {
-    background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    background-size: cover;
 
     display: flex;
     align-items: center;
@@ -134,14 +148,13 @@ h2 {
     position: relative;
 }
 
-
 .opaque-overlay {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0,0,0,0.55);
+    background-color: rgba(0,0,0,0.45);
 }
 
 /*----------------------------------- What Do I Do? Definitions */
@@ -211,6 +224,42 @@ h2 {
 
 .hr-divider--dark {
     background-color: #5F6673;
+}
+
+/*----------------------------------- Work History Definitions */
+
+.timeline-item {                    /* work history border */
+    padding: 4em 2em 0em 2em;
+    position: relative;
+    border-left: 1px solid;
+}
+
+.timeline-item p {                  /* Continuos border */
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item:before {             /* get date data and show it */
+    content: attr(data-dates);
+    position: absolute;
+    left: 2.5em;
+    top: 3em;
+    display: block;
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item:after {             /* draw the circles */
+    width: 12px;
+    height: 12px;
+    display: block;
+    top: 2.4em;                     /* put circles at top */
+    position: absolute;
+    left: -6px;                     /* to put over the line */
+    content: '';
+    border-radius: 12px;
+    background: #5F6673;
 }
 
 /*----------------------------------- Overwrite "Buttons" Definitions */
