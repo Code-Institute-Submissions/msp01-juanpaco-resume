@@ -25,7 +25,7 @@
                     <li><a href="index.html"><img src="assets/images/me.png" class="rounded-circle" height="70" width="70" alt=""></a></li>
                     <li><a href="resume.html"><i class="far fa-file"></i> <span>resume</span></a></li>
                     <li><a href="stories.html"><i class="far fa-heart"></i> <span>stories</span></a></li>
-                    <li><button data-toggle="modal" data-target="#contactModal"><i class="far fa-edit"></i> <span>contact</span></button></li>
+                    <li><button class="contact-modal-button" data-toggle="modal" data-target="#contactModal"><i class="far fa-edit"></i> <span>contact</span></button></li>
 
 <!--                    <li><a href="#"><i class="far fa-edit"></i> <span>contact</span></a></li>  -->
                 </ul>
@@ -185,22 +185,30 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title"></h5>
-                    <h5 class="modal-title"></h5>
+                    <h5 class="modal-title">Got a project in mind?</h5>
+                    <h5 class="modal-title">Let's work togheter!</h5>
                 </div>
                 <div class="modal-body">
                     <form>
                         <div class="form-group">
-
+                            <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required />
+                            <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email" required />
+                            <textarea name="projectsummary" id="projectsummary" rows="5" class="form-control" placeholder="Project Description" required></textarea>
                         </div>
-
+                        <div class="form-row text-center">
+                            <div class="col">
+                                <button type="submit" class="btn btn-secondary">Send Project Request</button>    
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
 
-
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 </body>
 </html>
