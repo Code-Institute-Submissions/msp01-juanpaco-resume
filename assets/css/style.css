@@ -48,6 +48,7 @@ h2 {
     z-index: 1;   
     background: #5F6673; 
     width: 100%;
+    height: 80px;
 }
 
 .bar-fixed-top {
@@ -60,15 +61,15 @@ h2 {
 
 .bar-fixed-items {
     display: flex;
-    font-size: 60%;
+    font-size: 0.8em;
     list-style-type: none;
     text-align: center;
     justify-content: center;
-    letter-spacing: 0.5px;
+    letter-spacing: 1.5px;
 }
 
 .bar-fixed-items li {
-    margin-right: 5px;
+    margin-right: 45px;
 }
 
 .bar-fixed-items li a {
@@ -76,39 +77,51 @@ h2 {
     color: #F2F2F2;
 }
 
-.bar-fixed-items li a i {
-    margin-top: 20px;
-    font-size: 150%;
-    width: 32px;
-    height: 32px;
+.bar-fixed-items .active a,
+.bar-fixed-items .active a:hover {
+    background-color: red;
+}
+
+.bar-fixed-items li a {
+    margin-top: 10px;
+    margin-bottom: 10px
+    font-size: 100%;
+    width: 30px;
+    height: 30px;
     padding: 12px 0;
-    border-radius: 50%;
     line-height: 7px;
     text-align: center;
+    border-radius: 50%;
     background: #5F6673;
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;*/
 }
 
-.bar-fixed-items li a i:hover {
-    font-size: 170%;
+.bar-fixed-items li a:hover,
+.bar-fixed-items li a:active
+{
+    font-size: 110%;
     background-color: #A6341B;
 }
 
-.bar-fixed-items li a span {
+.bar-fixed-items li span,
+.nav-pills li span {
     margin-top: 5px;
     display: block;
     line-height: 10px;
 }
 
-@media only screen and (max-width: 40em) {
-  .bar-fixed-items li a span { font-size: 1.5em }
+@media only screen and (max-width: 580px) {
+    .bar-fixed-items li { 
+        font-size: 0.5em;
+        margin-right: 15px;
+    }
 }
 
 
-.bar-fixed-items li a span:hover {
+/*.bar-fixed-items li a span:hover {
     border-bottom: 1px solid #F2F2F2;
 }
 
@@ -130,6 +143,7 @@ h2 {
 		transform: scale(1.2);
 	}
 }
+*/
 
 /*----------------------------------- Introduce Me Definitions */
 
