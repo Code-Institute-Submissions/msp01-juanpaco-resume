@@ -11,67 +11,72 @@
     <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#menu-list" data-offset="1">
 
     <header>
 
         <!-- Main Menu Header -->
-        <div class="container-fluid bar-fixed bar-fixed-top">
-            <nav>
-                <ul class="bar-fixed-items">
-                    <li>
-                        <a href="index.html#discovering">
-                            <i class="far fa-lightbulb"></i> <span>discover</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="index.html#designing">
-                            <i class="fas fa-drafting-compass"></i> <span>design</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fas fa-people-carry"></i> <span>colabore</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="index.html">
-                            <img src="assets/images/me.png" class="rounded-circle" height="70" width="70" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="resume.html">
-                            <i class="far fa-file"></i> <span>resume</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="stories.html">
-                            <i class="far fa-heart"></i> <span>stories</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="far fa-edit"></i> <span>contact</span>
-                        </a>
-                    </li>
+        <div class="container-fluid bar-fixed bar-fixed-top bg-color-bar">
+            <nav id="menu-list">
+                <ul class="nav-pills bar-fixed-items">
+                    <li class="nav-item"><a class="nav-link" href="#discovering"><i class="far fa-lightbulb"></i></a><span>discover</span></li>
+                    <li class="nav-item"><a class="nav-link" href="#designing"><i class="fas fa-drafting-compass"></i></a><span>design</span></li>
+                    <li class="nav-item"><a class="nav-link" href="#collaboring"><i class="fas fa-people-carry"></i></a><span>colabore</span></li>
+                    <li><a href="index.html"><img src="assets/images/me.png" class="rounded-circle" height="50" width="50" alt="Me"></a></li>
+                    <li class="nav-item"><a class="nav-link" href="resume.html"><i class="far fa-file"></i></a><span>resume</span></li>
+                    <li class="nav-item"><a class="nav-link" href="stories.html"><i class="far fa-heart"></i></a><span>stories</span></li>
+                    <li class="nav-item"><a class="nav-link contact-modal-button" data-toggle="modal" data-target="#contactModal"><i class="far fa-edit"></i></a><span>contact</span></li>
                 </ul>
             </nav>
         </div>
-
+        
     </header>
+
+
 
     
     <footer>
-        <div class=" container-fluid bar-fixed bar-fixed-bottom">
-            <ul class="bar-fixed-items">
-                <li><a href="https://www.twitter.com/paco_tools" target="_blank"><i class="fab fa-twitter"></i></a></li>
-		        <li><a href="https://www.linkedin.com/in/pacojm/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-		        <li><a href="assets/cv/CV-Juan-Paco.pdf" target="_blank"><i class="fas fa-file-pdf"></i><span>Download My CV</span></a></li>
-		        <li><a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a></li>
-		        <li><a href="https://www.github.com/pacotools" target="_blank"><i class="fab fa-github"></i></a></li>
-		    </ul>
+        <div class="container-fluid bar-fixed bar-fixed-bottom bg-color-bar">
+            <nav>
+                <ul class="nav-pills bar-fixed-items">
+                    <li class="nav-item"><a class="nav-link" href="https://www.twitter.com/paco_tools" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/pacojm/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="assets/cv/CV-Juan-Paco.pdf" target="_blank"><i class="fas fa-file-pdf"></i></a><span>Download My CV</span></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.github.com/pacotools" target="_blank"><i class="fab fa-github"></i></a></li>
+	    	    </ul>
+            </nav>
         </div>
   	</footer>
+
+    <div class="modal" tabindex="-1" role="dialog" id="contactModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Got a project in mind?</h5>
+                    <h5 class="modal-title">Let's work togheter!</h5>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required />
+                            <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email" required />
+                            <textarea name="projectsummary" id="projectsummary" rows="5" class="form-control" placeholder="Project Description" required></textarea>
+                        </div>
+                        <div class="form-row text-center">
+                            <div class="col">
+                                <button type="submit" class="btn btn-secondary">Send Project Request</button>    
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 </body>
 </html>

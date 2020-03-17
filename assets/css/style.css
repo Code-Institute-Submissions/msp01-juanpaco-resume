@@ -28,6 +28,20 @@ h2 {
 
 /*----------------- Colours */
 
+.bg-color-bar {
+    background: #5F6673; 
+}
+
+.bg-color-discovering {
+    background-color: #F2F2F2;
+    color: #5F6673;
+}
+
+.bg-color-designing {
+    background-color: #D9D9D9;
+    color: #5F6673;
+}
+
 .bg-color-work-history {
     background-color: #D9D9D9;
 }
@@ -37,7 +51,6 @@ h2 {
 .bar-fixed {
     position: fixed;
     z-index: 1;   
-    background: #5F6673; 
     width: 100%;
 }
 
@@ -63,34 +76,24 @@ h2 {
     margin: 10px;
 }
 
+.bar-fixed-items li button {
+    margin: 0;
+}
+
+.bar-fixed-items li button,
 .bar-fixed-items li a {
+    border: none;
     color: #F2F2F2;
     text-decoration: none;
     font-size: 100%;
     line-height: 7px;
     text-align: center;
-    border-radius: 50%;
     background: #5F6673;
-    transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;*/
 }
 
+.bar-fixed-items li button i,
 .bar-fixed-items li a i {
     font-size: 1.5em;
-}
-
-.bar-fixed-items .active a,
-.bar-fixed-items .active a:hover {
-    background-color: red;
-}
-
-.bar-fixed-items li a:hover,
-.bar-fixed-items li a:active
-{
-    font-size: 110%;
-    background-color: #A6341B;
 }
 
 .bar-fixed-items li span,
@@ -101,25 +104,14 @@ h2 {
     width: 100%;
 }
 
-@media only screen and (max-width: 580px) {
-    .bar-fixed-items li { 
-        font-size: 0.5em;
-        margin-right: 15px;
-    }
-}
-
-
-/*.bar-fixed-items li a span:hover {
-    border-bottom: 1px solid #F2F2F2;
-}
-
-.bar-fixed-items li a img {
-    margin-top: 5px; 
+.bar-fixed-items img {
+    margin-top: 5px;
+    padding: 0; 
 }
 
 .bar-fixed-items li a img:hover {
     animation-name: me-zoom;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
 }
 
@@ -131,7 +123,7 @@ h2 {
 		transform: scale(1.2);
 	}
 }
-*/
+
 
 /*----------------------------------- Introduce Me Definitions */
 
@@ -139,7 +131,6 @@ h2 {
     height: 100vh;
     background: url("../images/temporary-image.jpg") no-repeat bottom right fixed;
 }
-
 
 /*----------------------------------- Some General format containers Definitions */
 
@@ -186,30 +177,24 @@ h2 {
     line-height: 45px;
 }
 
-/*----------------------------------- Discovering Definitions */
+/*----------------------------------- How Do I Do Definitions */
 
-.container-discovering {
-    height: 100%;
-    background-color: #F2F2F2;
-    color: #5F6673;
+.container-howdoido {
+    height: 100%;    
+    padding: 80px;
 }
 
 .container-banner {
     width: 30px;
     padding-top: 25px;
     padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .container-banner i {
     font-size: 150%;
-}
-
-/*----------------------------------- Discovering Designing */
-
-.container-designing {
-    height: 100%;
-    background-color: #D9D9D9;
-    color: #5F6673;
 }
 
 /* --------------------------------- Block Dividers Definitions */
@@ -234,6 +219,19 @@ h2 {
 }
 
 /*----------------------------------- Work History Definitions */
+
+.section-column {
+    color: #5F6673;
+    display: table-cell;
+    height: 100vh;
+    margin-top: 80px;
+    padding: 30px;
+    float: none;
+}
+
+.history-items {
+    margin-bottom: 30px;
+}
 
 .timeline-item {                    /* work history border */
     padding: 4em 2em 0em 2em;
@@ -307,4 +305,33 @@ h2 {
 
 .jumbotron .lead { 
     color: #D9D9D9; 
+}
+
+/*----------------------------------- Overwrite "nav-pills" Definitions */
+
+.nav-pills .nav-link {
+    border-radius: 15%;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .nav-link:hover {
+    background-color: #A6341B;
+}
+
+/*----------------------------------- Responsive Definitions */
+
+@media only screen and (max-width: 580px) {
+
+    .bar-fixed-items li { 
+        font-size: 0.75em;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .container-howdoido {
+        height: 100vh;    
+        padding: 80px 20px 20px 20px;
+    }
+
+
 }

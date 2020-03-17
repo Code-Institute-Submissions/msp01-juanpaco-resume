@@ -17,21 +17,20 @@
     <header>
 
         <!-- Main Menu Header -->
-        <div class="container-fluid bar-fixed bar-fixed-top">
+        <div class="container-fluid bar-fixed bar-fixed-top bg-color-bar">
             <nav id="menu-list">
                 <ul class="nav-pills bar-fixed-items">
                     <li class="nav-item"><a class="nav-link" href="#discovering"><i class="far fa-lightbulb"></i></a><span>discover</span></li>
                     <li class="nav-item"><a class="nav-link" href="#designing"><i class="fas fa-drafting-compass"></i></a><span>design</span></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-people-carry"></i></a><span>colabore</span></li>
-                    <li class="nav-item"><a class="nav-link active" href="index.html"><img src="assets/images/me.png" class="rounded-circle" height="70" width="70" alt=""></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#collaboring"><i class="fas fa-people-carry"></i></a><span>colabore</span></li>
+                    <li><a href="index.html"><img src="assets/images/me.png" class="rounded-circle" height="50" width="50" alt="Me"></a></li>
                     <li class="nav-item"><a class="nav-link" href="resume.html"><i class="far fa-file"></i></a><span>resume</span></li>
                     <li class="nav-item"><a class="nav-link" href="stories.html"><i class="far fa-heart"></i></a><span>stories</span></li>
-                    <!--<li class="nav-item"><button class="contact-modal-button" data-toggle="modal" data-target="#contactModal"><i class="far fa-edit"></i> <span>contact</span></button></li>-->
-                    <!--<li><a href="#"><i class="far fa-edit"></i> <span>contact</span></a></li>-->
+                    <li class="nav-item"><a class="nav-link contact-modal-button" data-toggle="modal" data-target="#contactModal"><i class="far fa-edit"></i></a><span>contact</span></li>
                 </ul>
             </nav>
         </div>
-
+        
     </header>
 
     <!-- Introduce me -->
@@ -44,7 +43,7 @@
                     <h2>Juan Francisco Juárez Martínez</h2>
                     <hr class="hr-divider">
                     <p class="lead">I collaborate with you to discover business challenges and design unique digital solutions that improve your profitability and cash flow</p>
-                    <button class="btn btn-primary btn-lg" href="#" role="button">why hire me?</button>
+                    <a class="btn btn-primary btn-lg" href="resume.html" role="button">why hire me?</a>
                 </div>
             </div>
         </div>
@@ -79,7 +78,7 @@
                         <div class="whatdoido-card">
                             <h3><i class="fas fa-people-carry d-none d-sm-block"></i>Collaboring</h3>
                             <p>integrating a successful team to exceed the results</p>
-                            <p><a class="btn btn-sm btn-light btn-container" href="">How Do I Do It?</a></p>
+                            <p><a class="btn btn-sm btn-light btn-container" href="#collaboring">How Do I Do It?</a></p>
                         </div>
                     </div>
                 </div>
@@ -88,7 +87,7 @@
     </div>
 
     <!-- Discovering -->
-    <div id="discovering" class="container-fluid container-discovering">
+    <div id="discovering" class="container-fluid container-howdoido bg-color-discovering">
         <div class="container container-whatdoido-cards">
             <div class="row">
                 <div class="col-12">
@@ -127,7 +126,7 @@
     </div>
 
     <!-- Designing -->
-    <div id="designing" class="container-fluid container-designing">
+    <div id="designing" class="container-fluid container-howdoido bg-color-designing">
         <div class="container container-whatdoido-cards">
             <div class="row">
                 <div class="col-12">
@@ -158,21 +157,56 @@
                     </div>
                 </div>
                 <div class="col-md-8 d-none d-sm-inline">
-                    <!--<section class="container models-drawing">
-                        <div class="row">
-
-                        </div>
-                    </section>-->
                     <img src="assets/images/service-models.jpeg" height="100%" width="100%" alt="">
                 </div>
             </div>
         </div>
     </div>
 
+<!-- Collaboring -->
+    <div id="collaboring" class="container-fluid container-howdoido bg-color-discovering">
+        <div class="container container-whatdoido-cards">
+            <div class="row">
+                <div class="col-12">
+                    <div class="whatdoido-card">
+                        <h5><i class="far fa-lightbulb d-none d-sm-block"></i>I discover the issues where your value chain loses effectiveness</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!--<div class="col-12 col-lg-4 container-banner">-->
+                <div class="col-12 col-md-4 container-banner">
+                    <div class="media">
+                        <i class="fas fa-search-dollar align-self-star mr-3"></i>
+                        <div class="media-body">
+                            <p>I find useful Competitive Information for your projects</p>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <i class="fas fa-route align-self-star mr-3"></i>
+                        <div class="media-body">
+                            <p>I run operational diagnostics and I propose a roadmap of strategic initiatives and quick wins</p>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <i class="fas fa-heart align-self-star mr-3"></i>
+                        <div class="media-body">
+                            <p>With your databases I get business analytics to design your operating models</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 d-none d-sm-inline">
+                    <img src="assets/images/vcis.png" height="100%" width="100%" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <footer>
-        <div class="container-fluid bar-fixed bar-fixed-bottom">
+        <div class="container-fluid bar-fixed bar-fixed-bottom bg-color-bar">
             <nav>
-                <ul class="nav bar-fixed-items">
+                <ul class="nav-pills bar-fixed-items">
                     <li class="nav-item"><a class="nav-link" href="https://www.twitter.com/paco_tools" target="_blank"><i class="fab fa-twitter"></i></a></li>
                     <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/pacojm/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
                     <li class="nav-item"><a class="nav-link" href="assets/cv/CV-Juan-Paco.pdf" target="_blank"><i class="fas fa-file-pdf"></i></a><span>Download My CV</span></li>
