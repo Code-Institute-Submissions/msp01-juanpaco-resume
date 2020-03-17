@@ -128,7 +128,6 @@ h2 {
 	}
 }
 
-
 /*----------------------------------- Introduce Me Definitions */
 
 .introduce-container {
@@ -278,15 +277,18 @@ h2 {
     padding-top: 0;
 }
 
-.contact-modal-button {
-    
-}
-
 /*----------------------------------- Stories Scrolling Table Definitions */
+
+.stories-container {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding-top: 25px;
+    color:#5F6673;
+}
 
 .TableScroll {
     position: relative;
-    height: 500px;
+    /*height: calc(100vh - 200px);*/
     overflow: auto;
     display: block;
 }
@@ -335,7 +337,8 @@ h2 {
 
 .nav-pills .nav-link.active,
 .nav-pills .nav-link:hover {
-    background-color: #A6341B;
+    background-color: #5F6673;
+    color: #A6341B;
 }
 
 /*----------------------------------- Overwrite "modal-header" Definitions */
