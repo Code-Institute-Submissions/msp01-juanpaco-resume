@@ -5,7 +5,7 @@ This is my first **Code Institute** milestone product about *User-Centric Fronte
 In this web page I want to show you my professional experience as a _Logistics Specialist_ before I started studying for _Full Stack Web Developer_ at Code Institute. Both specialties can complement them each other to offer a better value proposition to future products developments.
  
 ## UX
----
+
 ### User stories
 - As a business partner, specialist or client, I expect to learn about Juan Francisco's projects and problem solving strategy as a solutions engineer. In the left section of the navigation bar I can find out what services he offers me and how he does it.
 
@@ -16,7 +16,7 @@ In this web page I want to show you my professional experience as a _Logistics S
 ![Some Screens](https://github.com/pacotools/msp01-juanpaco-resume/blob/master/assets/images/some%20screens.png)
 
 ## Features
---- 
+ 
 For the construction of this site the following features were used:
 ### Existing Features
 - Modals to display the contact window anywhere on the site.
@@ -36,14 +36,13 @@ The following features will be added to the site soon
 - Hide and show footer and nav automatically
 
 ## Technologies Used
----
+
 - HTML
 - CSS - media queries, ovewwrite definitions, etc.
 - [Bootstrap](https://getbootstrap.com/) - scrollspy, modal, nav, col-rows, etc
 
-
 ## Testing
----
+
 The project was tested to work in chrome browser of desktops, tablets and phones. Its functionality was tested using the chrome inspect function for different devices.
 
 In any case, the situations that need to be corrected are:
@@ -52,7 +51,7 @@ In any case, the situations that need to be corrected are:
 - I'm working on the missing images in the discover - design - collaborate sections. 
 
 ## Deployment
----
+
 The website is published using GitHub Pages and You can visited by clicling the following link: https://pacotools.github.io/msp01-juanpaco-resume/
 
 This project was developed using GitHub and GitPod. I use the Code Institute template.
@@ -60,7 +59,7 @@ This project was developed using GitHub and GitPod. I use the Code Institute tem
 Both the development and deployment versions and their resources reside on the GitHub platform for educational use. The repository name is "msp01-juanpaco-resume"
 
 ## Credits
----
+
 ### Content
 - The texts for all sections were written by me.
 
