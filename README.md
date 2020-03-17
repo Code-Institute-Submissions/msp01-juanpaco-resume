@@ -18,7 +18,7 @@ In this web page I want to show you my professional experience as a _Logistics S
 ## Features
  
 ### Existing Features
-- Resume. 
+- Resume. ...
 - Stories.  In the "stories" option, recruiters and specialists can review the description of some implemented projects. In the phone version only the name of the project can be seen.
 - Contact. By clicking on contact, a modal window is displayed so that specialists and clients can establish contact for any future project. The option is not yet enabled to send emails.
 
@@ -30,32 +30,17 @@ In addition, you may also use this section to discuss plans for additional featu
 - 
 
 ## Technologies Used
-
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
-
 - [JQuery](https://jquery.com)
-    - The project uses **JQuery** to simplify DOM manipulation.
+    - The project uses **JQuery** to...
 
 
 ## Testing
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+The project was tested to work in chrome browser of desktops, tablets and phones.
 
-Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
+Its functionality was tested using the chrome inspect function for different devices.
 
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
-
-1. Contact form:
-    1. Go to the "Contact Us" page
-    2. Try to submit the empty form and verify that an error message about the required fields appears
-    3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-    4. Try to submit the form with all inputs valid and verify that a success message appears.
-
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
-
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+It has not yet been tested on tables and physical phones.
 
 ## Deployment
 
@@ -65,8 +50,7 @@ Both the development and deployment versions and their resources reside on the G
 
 The repository name is "msp01-juanpaco-resume"
 
-In addition, if it is not obvious, you should also describe how to run your code locally.
-
+If you want to run the project on the web, enter the following web address to do so https://pacotools.github.io/msp01-juanpaco-resume/
 
 ## Credits
 
@@ -78,4 +62,4 @@ In addition, if it is not obvious, you should also describe how to run your code
 
 ### Acknowledgements
 
-- I received inspiration for this project from X
+- I thank my mentor Guido Cecilio Garcia Bernal for his valuable observations to make this project more intuitive for the user.
