@@ -15,6 +15,12 @@ In this web page I want to show you my professional experience as a _Logistics S
 
 ![Some Screens](https://github.com/pacotools/msp01-juanpaco-resume/blob/master/assets/images/some%20screens.png)
 
+### Mockups
+
+The mockups for the project are done on the [Vectr](https://vectr.com/) page, which is basically a page to draw pictures. This time it was very practical for me to do it this way. Here some examples:
+
+![Some Mockups](https://github.com/pacotools/msp01-juanpaco-resume/blob/master/assets/images/mockups-vectr.png)
+
 ## Features
  
 For the construction of this site the following features were used:
@@ -43,12 +49,14 @@ The following features will be added to the site soon:
 
 ## Testing
 
-The project was tested to work in **Chrome/Safari** browser of desktops, tablets and phones. Its functionality was tested using the Chrome inspect function for different devices.
+The project was tested to work in **Chrome/Safari** browser of desktops, tablets and phones. Its functionality was tested using the **Chrome** inspect function for different devices.
 
 In any case, the situations that need to be corrected are:
 
 - When reaching the end of the pages, the visibility of 80px row is lost by the fixed footer.
-- I'm working on the missing images in the discover - design - collaborate sections. 
+- The Modal feature for contact link does not send any email.
+- Education and Skills section in resume link are empty.
+- My photo is the option to return to the Home. Probably some users cannot identify this option and use the back key of the browser.  
 
 ## Deployment
 

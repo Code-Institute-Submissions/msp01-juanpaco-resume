@@ -1,7 +1,8 @@
 /* Project msp01-juanpaco-resume */
 /* Written by: JuanPaco at Cuernavaca, México */
-/* Thursday 05 - March - 2020 */
-/* html files: index.html */
+/* born: Thursday 05 - March - 2020 */
+/* Last update: Tuesday 17 - March - 2020 Mexico Local Time */
+/* html files use: index.html resume.html stories.html */
 
 
 /*---------------------- General Definitions */
@@ -232,18 +233,18 @@ h2 {
     margin-bottom: 30px;
 }
 
-.timeline-item {                    /* work history border */
+.timeline-item {                    /* draw "work history" border */
     padding: 4em 2em 0em 2em;
     position: relative;
     border-left: 1px solid;
 }
 
-.timeline-item p {                  /* Continuos border */
+.timeline-item p {                  /* join space between borders */
     padding: 0;
     margin: 0;
 }
 
-.timeline-item:before {             /* get date data and show it */
+.timeline-item:before {             /* get date data (from CV) for show it */
     content: attr(data-dates);
     position: absolute;
     left: 2.5em;
@@ -254,13 +255,13 @@ h2 {
     margin: 0;
 }
 
-.timeline-item:after {             /* draw the circles */
+.timeline-item:after {             /* draw the points for identify working history */
     width: 12px;
     height: 12px;
     display: block;
     top: 2.4em;                     /* put circles at top */
     position: absolute;
-    left: -6px;                     /* to put over the line */
+    left: -6px;                     /* to put circles over the continuous line */
     content: '';
     border-radius: 12px;
     background: #5F6673;
@@ -289,11 +290,11 @@ h2 {
     display: block;
 }
 
-/*----------------------------------- Overwrite "Buttons" Definitions */
+/*----------------------------------- Overwrite "Buttons" Definitions to personalize buttons */
 
 .btn {
     background-color: #A6341B;
-    border-color: #A6341B;
+    border-color: none;
     border-radius: 15px;
     min-width: 100px;
     font-weight: bold;
@@ -303,7 +304,6 @@ h2 {
 
 .btn-container {
     background-color: #5F6673;
-    border-color: #5F6673;    
 }
 
 .btn:hover,
@@ -311,7 +311,6 @@ h2 {
 .btn:focus,
 .btn:active:focus {
     background-color: #df4929;
-    border-color: #df4929;
     color: inherit;
 }
 
@@ -327,6 +326,8 @@ h2 {
 
 /*----------------------------------- Overwrite "nav-pills" Definitions */
 
+/* I overwrite original blue color of nav-pills feature */
+
 .nav-pills .nav-link {
     border-radius: 15%;
 }
@@ -339,6 +340,8 @@ h2 {
 
 /*----------------------------------- Overwrite "modal-header" Definitions */
 
+/* I overwrite original border and left justify of modal feature */ 
+
 .modal-header { 
     border-bottom: none;
     justify-content: center; 
@@ -348,17 +351,20 @@ h2 {
 
 @media only screen and (max-width: 580px) {
 
+    /* Change font-size and set options menu closer in order to visualize in phone screens */
     .bar-fixed-items li { 
         font-size: 0.75em;
         margin-right: 0;
         margin-left: 0;
     }
 
+    /* It's better to center discover-desing-collabore banners at full phone screen */
     .container-howdoido {
         height: 100vh;    
         padding: 80px 20px 20px 20px;
     }
 
+    /* Because i need to adjust main header of contact "modal" to a single row */
     .modal-header h2 {
         font-size: 1.8rem;
     }
